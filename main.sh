@@ -29,7 +29,7 @@ git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
 git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/*mosdns ./ ; rm -rf openwrt-mos
-
+git clone --depth 1 https://github.com/cyzzc/openwrt_nezha && mvdir openwrt_nezha
 
 
 svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
