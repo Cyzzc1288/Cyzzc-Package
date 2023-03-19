@@ -26,9 +26,19 @@ git clone --depth 1 https://github.com/esirplayground/luci-app-poweroff
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
+git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
+git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
+git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/*mosdns ./ ; rm -rf openwrt-mos
+
+
 
 svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
-
+svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
+svn export https://github.com/fw876/helloworld/trunk/sagernet-core
+svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
+svn export https://github.com/fw876/helloworld/trunk/lua-neturl
+svn export https://github.com/fw876/helloworld/trunk/redsocks2
+svn export https://github.com/fw876/helloworld/trunk/microsocks
 
 
 git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
