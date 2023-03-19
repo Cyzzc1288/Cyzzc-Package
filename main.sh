@@ -41,8 +41,8 @@ svn export https://github.com/fw876/helloworld/trunk/redsocks2
 svn export https://github.com/fw876/helloworld/trunk/microsocks
 
 
-git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
-multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
+#git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
+#multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
 net/qBittorrent-static net/qBittorrent libs/qtbase libs/qttools libs/rblibtorrent \
 net/uugamebooster net/verysync net/dnsforwarder net/nps net/microsocks net/tcpping net/redsocks2
 
