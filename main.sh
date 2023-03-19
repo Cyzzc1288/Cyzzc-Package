@@ -17,10 +17,17 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-git clone --depth 1 https://github.com/AlexZhuo/luci-app-bandwidthd.git
+git clone --depth 1 https://github.com/AlexZhuo/luci-app-bandwidthd
 git clone --depth 1 https://github.com/sirpdboy/netspeedtest && mvdir netspeedtest
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall
 git clone --depth 1 -b luci-smartdns-new-version https://github.com/xiaorouji/openwrt-passwall passwall && mv -n passwall/luci-app-passwall ./;rm -rf passwall
+git clone --depth 1 https://github.com/sirpdboy/luci-theme-opentopd
+git clone --depth 1 https://github.com/esirplayground/luci-app-poweroff
+git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
+git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
+git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
+
+svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
 
 
 
