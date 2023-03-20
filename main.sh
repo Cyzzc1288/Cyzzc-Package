@@ -31,7 +31,6 @@ git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
 git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/*mosdns ./ ; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/cyzzc/openwrt_nezha && mvdir openwrt_nezha
 
-
 svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn export https://github.com/fw876/helloworld/trunk/sagernet-core
@@ -39,8 +38,6 @@ svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
 svn export https://github.com/fw876/helloworld/trunk/lua-neturl
 svn export https://github.com/fw876/helloworld/trunk/redsocks2
 svn export https://github.com/fw876/helloworld/trunk/microsocks
-
-
 
 mv -n openwrt-passwall/* ./ ; rm -Rf openwrt-passwall
 mv -n openwrt-package/* ./ ; rm -Rf openwrt-package
@@ -54,7 +51,6 @@ sed -i \
 -e 's?\.\./\.\./luci.mk?$(TOPDIR)/feeds/luci/luci.mk?' \
 -e 's/ca-certificates/ca-bundle/' \
 */Makefile
-
 
 bash diy/create_acl_for_luci.sh -a >/dev/null 2>&1
 bash diy/convert_translation.sh -a >/dev/null 2>&1
