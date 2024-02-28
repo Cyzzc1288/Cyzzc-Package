@@ -30,15 +30,16 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
 git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/*mosdns ./ && mv -n openwrt-mos/dat ./ ; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/cyzzc/openwrt_nezha && mvdir openwrt_nezha
+git clone --depth 1 https://https://github.com/fw876/helloworld && mvdir helloworld
 
 svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
-svn export https://github.com/fw876/helloworld/trunk/sagernet-core
-svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
-svn export https://github.com/fw876/helloworld/trunk/lua-neturl
-svn export https://github.com/fw876/helloworld/trunk/redsocks2
-svn export https://github.com/fw876/helloworld/trunk/microsocks
-svn export https://github.com/fw876/helloworld/trunk/v2raya
+# svn export https://github.com/fw876/helloworld/trunk/sagernet-core
+# svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
+# svn export https://github.com/fw876/helloworld/trunk/lua-neturl
+# svn export https://github.com/fw876/helloworld/trunk/redsocks2
+# svn export https://github.com/fw876/helloworld/trunk/microsocks
+# svn export https://github.com/fw876/helloworld/trunk/v2raya
 
 git_sparse_clone master "https://github.com/immortalwrt/packages" "immpack" net/sub-web \
 net/smartdns net/dnsproxy net/haproxy net/v2raya net/cdnspeedtest \
