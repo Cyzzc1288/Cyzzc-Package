@@ -30,7 +30,7 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
 git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/*mosdns ./ && mv -n openwrt-mos/dat ./ ; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/cyzzc/openwrt_nezha && mvdir openwrt_nezha
-git clone --depth 1 https://github.com/fw876/helloworld && mv -n helloworld/{luci-app-ssr-plus,tuic-client,shadow-tls} ./ ; rm -rf helloworld
+git clone --depth 1 https://github.com/fw876/helloworld && mv -n helloworld/{luci-app-ssr-plus,tuic-client,shadow-tls,lua-neturl,redsocks2} ./ ; rm -rf helloworld
 git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/luci-app-openclash ./; rm -rf OpenClash
 
 svn export https://github.com/immortalwrt/packages/trunk/net/smartdns
